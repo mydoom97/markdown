@@ -21,6 +21,7 @@
 ## 3.安装
 ### 3-1.安装依赖包
 ```
+    yum -y install perl*      #直接安装perl所有依赖包（因为后面步骤可能缺少SSL）
     yum -y install perl-CPAN  #进入web管理界面安装终端时用到
 ```
 ### 3-2.安装Webmin
@@ -32,13 +33,16 @@
 ### 安装详情
 1. 默认回车的步骤
 
-![title](D:/github/markdown/webmin/enter.png)
+![title](./enter.png)
+
 2. 用户名密码
 
-![title](D:/github/markdown/webmin/user-passwd.png)
+![title](./user-passwd.png)
+
 3. SSL安全需要按“Y”选项
 
-![title](D:/github/markdown/webmin/ssl.png)
+![title](./ssl.png)
+
 ## 4.卸载webmin
 > 运行卸载脚本
 ```
