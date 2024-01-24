@@ -29,3 +29,12 @@
     chmod +x setup.sh
     ./setup.sh
 ```
+## 4.卸载webmin
+> 运行卸载脚本
+```
+    bash /etc/webmin/uninstall.sh
+```
+> 重新解压压缩包还原目录
+```
+    tar zxvf webmin-*.tar.gz /home/
+```
