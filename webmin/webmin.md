@@ -1,6 +1,10 @@
 # Webmin:开源的LinuxWeb管理工具
 ## 1.下载压缩包
 > https://github.com/webmin/webmin/release
+
+
+-----
+
 ## 2.环境准备
 ### 2-1.关闭防火墙
 
@@ -18,6 +22,10 @@
     cd /home/                    # 进入要解压的目录，如/home/
     tar -zxvf webmin-*.tar.gz    # 解压
 ```
+
+
+-----
+
 ## 3.安装
 ### 3-1.安装依赖包
 ```
@@ -42,6 +50,10 @@
 3. SSL安全需要按“Y”选项
 
 ![title](./ssl.png)
+
+
+
+-----
 
 ## 4.卸载webmin
 > 运行卸载脚本
