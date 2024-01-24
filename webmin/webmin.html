@@ -29,6 +29,7 @@
 <blockquote>
 <p><a href="https://github.com/webmin/webmin/release">https://github.com/webmin/webmin/release</a></p>
 </blockquote>
+<hr>
 <h2 id="2环境准备">2.环境准备 </h2>
 <h3 id="2-1关闭防火墙">2-1.关闭防火墙 </h3>
 <pre data-role="codeBlock" data-info="" class="language-text text"><code>    systemctl stop firewalld.service
@@ -39,9 +40,11 @@
 </code></pre><h3 id="2-3解压安装包">2-3.解压安装包 </h3>
 <pre data-role="codeBlock" data-info="" class="language-text text"><code>    cd /home/                    # 进入要解压的目录，如/home/
     tar -zxvf webmin-*.tar.gz    # 解压
-</code></pre><h2 id="3安装">3.安装 </h2>
+</code></pre><hr>
+<h2 id="3安装">3.安装 </h2>
 <h3 id="3-1安装依赖包">3-1.安装依赖包 </h3>
-<pre data-role="codeBlock" data-info="" class="language-text text"><code>    yum -y install perl-CPAN  #进入web管理界面安装终端时用到
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>    yum -y install perl*      #直接安装perl所有依赖包（因为后面步骤可能缺少SSL）
+    yum -y install perl-CPAN  #进入web管理界面安装终端时用到
 </code></pre><h3 id="3-2安装webmin">3-2.安装Webmin </h3>
 <pre data-role="codeBlock" data-info="" class="language-text text"><code>    cd /home/webmin-*/
     chmod +x setup.sh
@@ -50,11 +53,16 @@
 <ol>
 <li>默认回车的步骤</li>
 </ol>
-<p><img src="D:/github/markdown/webmin/enter.png" alt="title">
-2. 用户名密码</p>
-<p><img src="D:/github/markdown/webmin/user-passwd.png" alt="title">
-3. SSL安全需要按“Y”选项</p>
-<p><img src="D:/github/markdown/webmin/ssl.png" alt="title"></p>
+<p><img src="./enter.png" alt="title"></p>
+<ol start="2">
+<li>用户名密码</li>
+</ol>
+<p><img src="./user-passwd.png" alt="title"></p>
+<ol start="3">
+<li>SSL安全需要按“Y”选项</li>
+</ol>
+<p><img src="./ssl.png" alt="title"></p>
+<hr>
 <h2 id="4卸载webmin">4.卸载webmin </h2>
 <blockquote>
 <p>运行卸载脚本</p>
