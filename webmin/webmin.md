@@ -30,6 +30,15 @@
     ./setup.sh
 ```
 ### 安装详情
+1. 默认回车的步骤
+
+![title](D:/github/markdown/webmin/enter.png)
+2. 用户名密码
+
+![title](D:/github/markdown/webmin/user-passwd.png)
+3. SSL安全需要按“Y”选项
+
+![title](D:/github/markdown/webmin/ssl.png)
 ## 4.卸载webmin
 > 运行卸载脚本
 ```
