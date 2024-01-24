@@ -29,6 +29,7 @@
     chmod +x setup.sh
     ./setup.sh
 ```
+### 安装详情
 ## 4.卸载webmin
 > 运行卸载脚本
 ```
