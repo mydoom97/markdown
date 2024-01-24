@@ -18,3 +18,14 @@
     cd /home/                    # 进入要解压的目录，如/home/
     tar -zxvf webmin-*.tar.gz    # 解压
 ```
+## 3.安装
+### 3-1.安装依赖包
+```
+    yum -y install perl-CPAN  #进入web管理界面安装终端时用到
+```
+### 3-2.安装Webmin
+```
+    cd /home/webmin-*/
+    chmod +x setup.sh
+    ./setup.sh
+```
