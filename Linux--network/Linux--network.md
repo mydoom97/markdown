@@ -7,9 +7,15 @@
 
 ## 1. centos6.5
 ## 2. centos7.9
-1. 重启网卡
+1. 网卡启停及重启
 ```
-    systemctl restart network
+    systemctl enable NetworkManager     # 开机自启动
+    systemctl disable NetworkManager    # 取消开机自启动
+    systemctl status NetworkManager     # 查看状态
+    systemctl restart NetworkManager    # 重启服务
+    systemctl stop NetworkManager       # 停止服务
+    systemctl start NetworkManager      # 启动服务
+    systemctl status NetworkManager     # 查看状态
 ```
 1. 网卡文件位置及内容更改
 > /etc/sysconfig/network-scripts/ifcfg-*
