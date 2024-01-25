@@ -13,7 +13,8 @@
 ```
 1. 网卡文件位置及内容更改
 > /etc/sysconfig/network-scripts/ifcfg-*
-
+#### 如下图为静态IP配置例子
+![Alt text](image.png)
 1. 启停防火墙
 
 
