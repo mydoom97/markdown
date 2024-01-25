@@ -3,3 +3,4 @@
 2. centos7.9
 3. rocky8.9
 4. rocky9.3
+## 1. centos6.5
