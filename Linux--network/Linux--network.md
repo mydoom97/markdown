@@ -1,16 +1,11 @@
 # 以下系统的网卡基本配置及防火墙启停及文件位置
 [TOC]
-1. centos6.5
-2. centos7.9
-3. rocky8.9
-4. rocky9.3
+
 
 ## 1. centos6.5
 ## 2. centos7.9
-1. 网卡启停及重启
+1. 网络服务启停
 ```
-    ifup eth0                           # 启动网卡
-    ifdown eth0                         # 关闭网卡
     systemctl enable NetworkManager     # 开机自启动
     systemctl disable NetworkManager    # 取消开机自启动
     systemctl status NetworkManager     # 查看状态
@@ -19,7 +14,18 @@
     systemctl start NetworkManager      # 启动服务
     systemctl status NetworkManager     # 查看状态
 ```
-1. 网卡文件位置及内容更改
+2. 网卡启停
+```
+    nmcli connection reload                  # 重新加载配置文件
+    nmcli connection up id                   # 启动网卡
+    nmcli connection down id                 # 关闭网卡
+    nmcli connection show                    # 查看网卡信息
+    nmcli device show                        # 查看网卡信息
+    nmcli device status                      # 查看网卡状态
+    nmcli device disconnect id               # 断开网卡连接
+    nmcli device connect id                  # 连接网卡
+```
+3. 网卡文件位置及内容更改
 > /etc/sysconfig/network-scripts/ifcfg-*
 #### 如下图为静态IP配置例子
 ![Alt text](image.png)
@@ -31,7 +37,18 @@
 - NETMASK=255.255.255.0 表示子网掩码。
 - GATEWAY=192.168.1.1 表示默认网关。
 - DNS1=8.8.8.8 表示DNS服务器地址。
-1. 启停防火墙
+4. 启停防火墙
+```
+    systemctl enable firewalld                  # 开机自启动
+    systemctl disable firewalld                 # 取消开机自启动
+    systemctl status firewalld                  # 查看状态
+    systemctl start firewalld                   # 启动服务
+    systemctl stop firewalld                    # 停止服务
+    systemctl restart firewalld                 # 重启服务
+```
+## 3.rocky8.9
 
 
-2. 防火墙文件位置及内容更改
+
+
+## 4.rocky9.3
