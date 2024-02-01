@@ -79,4 +79,19 @@ ncat IP_address port_number
 > UDP连接
 
 ![Alt text](image-2.png)
-7
+
+> 代理模式
+
+![Alt text](image-3.png)
+
+> 端口转发
+
+![Alt text](image-4.png)
+
+> 创建后门 
+
+![Alt text](image-5.png)
+
+> 强制保持连接
+
+![Alt text](image-6.png)
