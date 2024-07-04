@@ -18,5 +18,26 @@
 ## BMC配置：目前只有两类不同的服务器以后随时间更新
 
 ### 1.
-![title](G:/1/1.jpg)
+![title](E:/github/markdown/深信服上架/1/1.jpg)
+
+### 2.
+![title](E:/github/markdown/深信服上架/1/2.jpg)
+
+### 3.
+![title](E:/github/markdown/深信服上架/1/3.jpg)
+
+### 4.
+![title](E:/github/markdown/深信服上架/1/4.jpg)
+
+
+-----
+
+### 1.
+![title](E:/github/markdown/深信服上架/2/1.jpg)
+
+### 2.
+![title](E:/github/markdown/深信服上架/2/2.jpg)
+
+### 3.
+![title](E:/github/markdown/深信服上架/2/3.jpg)
 
