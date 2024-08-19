@@ -1,0 +1,162 @@
+<!DOCTYPE html><html><head>
+      <title>C7.9--network</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\admin\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="以下是centos79的网络配置出自红帽官方文档整理">以下是Centos7.9的网络配置出自红帽官方文档整理 </h1>
+<hr>
+<h2 id="1配置dhcp客户端">1.配置DHCP客户端 </h2>
+<p>在CentOS 7中，默认使用NetworkManager来管理网络配置。NetworkManager是一个网络配置工具，它使用DHCP协议来分配IP地址和其他网络配置参数。</p>
+<h3 id="11-请求ip地址">1.1 请求IP地址 </h3>
+<p>当 DHCP 连接启动时，dhcp 客户端会从 DHCP 服务器请求 IP 地址。默认情况下，dhcp 客户端等待此请求完成的时间为 60 秒。您可以使用 nmcli 工具或 /etc/sysconfig/network -scripts/ifcfg-ifname文件中的 IPV4_DHCP_TIMEOUT 选项来配置ipv4.dhcp- timeout 属性。例如，使用 nmcli:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection modify enp1s0 ipv4.dhcp-timeout <span class="token number">10</span>
+</code></pre><h3 id="12-使dhcpv4持久">1.2 使DHCPv4持久 </h3>
+<p>要使 DHCPv4 在启动和租期续订过程中持久化，请将 ipv4.dhcp-timeout 属性设置为 32 位整数(MAXINT32)的最大值，即 2147483647 或 infinity 值：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection modify enp1s0 ipv4.dhcp-timeout <span class="token number">2147483647</span>
+nmcli connection modify enps1s0 ipv4.dhcp-timeout infinity
+</code></pre><p>因此，NetworkManager 永远不会停止尝试从 DHCP 服务器获取或续订租期，直到成功为止。</p>
+<p>要确保仅在租期续订过程中有 DHCP 持久性行为，您可以在 /etc/sysconfig/network-scripts/ifcfg- enp1s0 配置文件中使用 nmcli 手动将静态 IP 添加到 /etc/sysconfig/network-scripts/ifcfg- enp1s0 配置文件中的 IPADDR 属性中：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection modify enp1s0 ipv4.address <span class="token number">192.168</span>.122.88/24
+</code></pre><p>当 IP 地址租用到期时，静态 IP 会保留已配置或部分配置的 IP 状态（您可以拥有 IP 地址，但您未连接到互联网），确保 dhcp 客户端每 2 分钟重新启动一次。</p>
+<hr>
+<h2 id="2-配置netconsole">2. 配置netconsole </h2>
+<p>如果磁盘日志记录失败或使用串行控制台，您可能需要使用内核调试。netconsole 内核模块允许通过网络将内核消息记录到另一台计算机。
+为了能够使用 netconsole，您需要具有一个在网络上正确配置的 rsyslog 服务器。</p>
+<h3 id="21-为netconsole配置rsyslog">2.1 为netconsole配置rsyslog </h3>
+<ol>
+<li>
+<p>将 rsyslogd 守护进程配置为侦听 514/udp 端口，并通过取消注释 /etc/rsyslog.conf 文件的 MODULES 部分中的以下行从网络接收信息：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token variable">$ModLoad</span> imudp
+<span class="token variable">$UDPServerRun</span> <span class="token number">514</span>
+</code></pre></li>
+<li>
+<p>重启 rsyslog 服务：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>systemctl restart rsyslog
+</code></pre></li>
+<li>
+<p>验证 rsyslogd 是否在侦听 514/udp 端口：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">netstat</span> <span class="token parameter variable">-l</span> <span class="token operator">|</span> <span class="token function">grep</span> syslog
+</code></pre></li>
+</ol>
+<h4 id="22-配置发送机器">2.2 配置发送机器 </h4>
+<ol>
+<li>
+<p>在/etc/sysconfig/netconsole 文件中设置 SYSLOGADDR 变量的值，以匹配 syslogd 服务器的 IP 地址。例如：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">SYSLOGADDR</span><span class="token operator">=</span><span class="token number">192.168</span>.1.100
+</code></pre></li>
+<li>
+<p>重启 netconsole 服务以使更改生效,并使netconsole服务开机自启：</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>systemctl restart netconsole
+systemctl <span class="token builtin class-name">enable</span> netconsole
+</code></pre></li>
+<li>
+<p>在 /var/log/messages 文件中或 rsyslog.conf 中指定的文件中查看来自客户端的 netconsole 消息。</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>    <span class="token function">cat</span> /var/log/messages
+</code></pre></li>
+</ol>
+<hr>
+<h2 id="3-使用networkmanager">3. 使用NetworkManager </h2>
+<h3 id="31-安装">3.1 安装 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>yum <span class="token function">install</span> NetworkManager
+</code></pre><h3 id="32-检查状态及启停">3.2 检查状态及启停 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>systemctl status NetworkManager
+systemctl start NetworkManager
+systemctl stop NetworkManager
+systemctl restart NetworkManager
+systemctl <span class="token builtin class-name">enable</span> NetworkManager
+systemctl disable NetworkManager
+</code></pre><h3 id="33-使用sysconfig文件">3.3 使用sysconfig文件 </h3>
+<p>若更改sysconfig目录下文件，则需要重新加载配置</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection reload
+</code></pre><p>或只加载某一个更改的文件</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli con load /etc/sysconfig/network-scripts/ifcfg-ifname
+</code></pre><p>断开指定的网络设备并停止其网络服务</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli dev disconnect interface-name
+</code></pre><p>连接指定的网络设备并启动其网络服务</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli con up interface-name
+</code></pre><hr>
+<h2 id="4配置ip">4.配置IP </h2>
+<h3 id="41-nmcli的用法及参数">4.1 nmcli的用法及参数 </h3>
+<ul>
+<li>
+<p>-t： 此模式可用于计算机脚本处理，显示命令的简单输出</p>
+</li>
+<li>
+<p>-f: 此选项指定输出中可以显示哪些字段,例如：</p>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli  <span class="token parameter variable">-f</span> DEVICE,STATE,IP4.ADDRESS,IP4.GATEWAY
+</code></pre><ul>
+<li>-p： 此选项用于便于查看输出。</li>
+<li>检查 NetworkManager 的整体状态</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli general status
+</code></pre><ul>
+<li>查看 NetworkManager 日志状态</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli general logging
+</code></pre><ul>
+<li>开启关闭网卡设备</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli device up ens33
+nmcli device down ens33
+</code></pre><ul>
+<li>检查网络连接状态</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection show
+</code></pre><ul>
+<li>仅查看当前活跃的连接</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection show <span class="token parameter variable">--active</span>
+</code></pre><ul>
+<li>仅查看 NetworkManager 识别的设备及其状态</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli device status
+</code></pre><h3 id="42-配置静态ip">4.2 配置静态IP </h3>
+<ul>
+<li>添加一个网卡配置test，并绑定物理网卡，IPV4及其网关、IPV6及其网关</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection <span class="token function">add</span> <span class="token builtin class-name">type</span> ethernet con-name 网卡名 ifname 物理设备名 ip4.address IP地址 gw4 网关 ipv6.addresses IP地址  ipv6.gateway 网关
+nmcli con up <span class="token builtin class-name">test</span>  <span class="token comment">#启动test网卡</span>
+</code></pre><ul>
+<li>配置两个DNS地址</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli con mod 网卡配置文件 ipv4.dns <span class="token string">"DNS地址1 DNS地址2"</span>
+nmcli con mod 网卡配置文件 ipv6.dns <span class="token string">"DNS地址1 DNS地址2"</span>
+</code></pre><ul>
+<li>删除网卡配置</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmcli connection delete 网卡配置名
+</code></pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
