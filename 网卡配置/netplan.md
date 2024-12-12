@@ -1,5 +1,7 @@
-# 一、rocky8、9
-# 二、Ubuntu22.04
+---
+
+
+# Ubuntu22.04
 
 > netplan
 
