@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux-student/用户.md",
+                "file": "尚文笔记/路由.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "用户"
+              "title": "路由"
             }
           }
         ],
@@ -88,13 +88,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1920e13618f143a",
@@ -184,9 +182,18 @@
   },
   "active": "984d7bf68bcb55d9",
   "lastOpenFiles": [
-    "Linux-student/进程-ps.md",
-    "Linux-student/用户.md",
+    "尚文笔记/生成树.md",
+    "尚文笔记/OSPF.md",
+    "尚文笔记/1.md",
+    "尚文笔记/二层.md",
+    "尚文笔记/2.md",
+    "尚文笔记/3.md",
+    "尚文笔记/路由.md",
     "glpi搭建.md",
+    "Mysql/8.0.md",
+    "Linux-student/用户.md",
+    "Mysql",
+    "Linux-student/进程-ps.md",
     "Linux-student",
     "mariadb更新源.md",
     "网卡配置/nmcli.md",
@@ -208,21 +215,14 @@
     "firewall.html",
     "C7.9--network.html",
     "ji-shi-tong-xin/即时通信.md",
-    "ji-shi-tong-xin/即时通信.html",
     "ji-shi-tong-xin/thelounge-user.png",
     "ubuntu_Linux_2024-06-24/firewall_比较通用的管理工具 .md",
     "ubuntu_Linux_2024-06-24/glpi搭建.md",
     "ubuntu_Linux_2024-06-24/GLPI.md",
-    "idcops/搭建.md",
     "未命名.canvas",
     "network-tools/image-6.png",
-    "尚文笔记/1.md",
     "网卡配置/Pasted image 20241125180254.png",
-    "zabbix/搭建.md",
     "network-tools/image-5.png",
-    "network-tools/image-3.png",
-    "network-tools/network-tools.md",
-    "ubuntu_Linux_2024-06-24/firewall.md",
-    "尚文笔记/2.md"
+    "network-tools/image-3.png"
   ]
 }
