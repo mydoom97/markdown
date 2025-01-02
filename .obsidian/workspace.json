@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚文笔记/路由.md",
+                "file": "Linux-student/文件权限.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "路由"
+              "title": "文件权限"
             }
           }
         ],
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d1920e13618f143a",
@@ -182,13 +183,14 @@
   },
   "active": "984d7bf68bcb55d9",
   "lastOpenFiles": [
+    "尚文笔记/路由.md",
+    "Linux-student/文件权限.md",
     "尚文笔记/生成树.md",
     "尚文笔记/OSPF.md",
     "尚文笔记/1.md",
     "尚文笔记/二层.md",
     "尚文笔记/2.md",
     "尚文笔记/3.md",
-    "尚文笔记/路由.md",
     "glpi搭建.md",
     "Mysql/8.0.md",
     "Linux-student/用户.md",
@@ -218,7 +220,6 @@
     "ji-shi-tong-xin/thelounge-user.png",
     "ubuntu_Linux_2024-06-24/firewall_比较通用的管理工具 .md",
     "ubuntu_Linux_2024-06-24/glpi搭建.md",
-    "ubuntu_Linux_2024-06-24/GLPI.md",
     "未命名.canvas",
     "network-tools/image-6.png",
     "网卡配置/Pasted image 20241125180254.png",
