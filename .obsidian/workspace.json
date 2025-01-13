@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux-student/文件权限.md",
+                "file": "Linux-student/软件包.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文件权限"
+              "title": "软件包"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux-student/文件权限.md"
+                "file": "Linux-student/软件包.md"
               },
               "icon": "lucide-list",
-              "title": "文件权限 的大纲"
+              "title": "软件包 的大纲"
             }
           }
         ],
@@ -167,11 +167,11 @@
   },
   "active": "c7c87fabf94b8e56",
   "lastOpenFiles": [
+    "Linux-student/文件权限.md",
     "Linux-student/压缩和解压缩.md",
     "Linux-student/用户.md",
     "Linux-student/软件包.md",
     "Linux-student/进程-ps.md",
-    "Linux-student/文件权限.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "网卡配置/netplan.md",
