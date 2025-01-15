@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux-student/进程-ps.md",
+                "file": "网卡配置/netplan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "进程-ps"
+              "title": "netplan"
             }
           }
         ]
@@ -165,23 +165,23 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "664480534120d233",
+  "active": "8be6b5e52201ae8b",
   "lastOpenFiles": [
-    "Linux-student/软件包.md",
+    "网卡配置/Pasted image 20241125180254.png",
+    "Pasted image 20250109223839.png",
+    "Pasted image 20250109223911.png",
+    "Pasted image 20250109223519.png",
     "未命名 2.canvas",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "Linux-student/进程-ps.md",
+    "Linux-student/软件包.md",
     "Linux-student/文件权限.md",
     "Linux-student/压缩和解压缩.md",
     "Linux-student/用户.md",
-    "Linux-student/进程-ps.md",
-    "未命名 1.canvas",
-    "未命名.canvas",
     "网卡配置/netplan.md",
     "网卡配置/nmcli.md",
-    "Pasted image 20250109223911.png",
-    "Pasted image 20250109223839.png",
-    "Pasted image 20241125180254.png",
     "网卡配置/Pasted image 20241125180254.png",
-    "Pasted image 20250109223519.png",
     "network-tools/network-tools.md",
     "尚文笔记/路由.md",
     "尚文笔记/生成树.md",
