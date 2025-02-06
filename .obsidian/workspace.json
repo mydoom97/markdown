@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "netbox/搭建.md",
+                "file": "Linux-student/软件包.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "搭建"
+              "title": "软件包"
             }
           }
         ]
@@ -168,10 +168,10 @@
   },
   "active": "664480534120d233",
   "lastOpenFiles": [
+    "netbox/搭建.md",
     "网卡配置/Pasted image 20241125180254.png",
     "尚文笔记/DHCP.md",
     "Linux-student/软件包.md",
-    "netbox/搭建.md",
     "netbox",
     "Linux-student/进程-ps.md",
     "未命名 2.canvas",
