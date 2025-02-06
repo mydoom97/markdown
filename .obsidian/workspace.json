@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "尚文笔记/1.md",
+                "file": "Linux-student/软件包.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "1 的反向链接列表"
+              "title": "软件包 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "尚文笔记/1.md",
-                "linksCollapsed": false,
+                "file": "Linux-student/软件包.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "1 的出链列表"
+              "title": "软件包 的出链列表"
             }
           },
           {
@@ -168,10 +168,12 @@
   },
   "active": "664480534120d233",
   "lastOpenFiles": [
+    "…….md",
+    "Linux-student/软件包.md",
+    "文件权限^.md",
     "netbox/搭建.md",
     "网卡配置/Pasted image 20241125180254.png",
     "尚文笔记/DHCP.md",
-    "Linux-student/软件包.md",
     "netbox",
     "Linux-student/进程-ps.md",
     "未命名 2.canvas",
@@ -206,7 +208,6 @@
     "firewall.md",
     "fang-huo-qiang",
     "新建文件夹",
-    "ubuntu_Linux_2024-06-24/iptables.md",
     "npm+node.js.html",
     "JavaScript.docx",
     "glpi搭建.html",
