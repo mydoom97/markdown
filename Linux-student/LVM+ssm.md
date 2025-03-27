@@ -59,4 +59,15 @@ LVM（逻辑卷管理，Logical Volume Manager）是一种 **磁盘管理软件
 
 > LV的扩充缩减实际上就是增加或减少组成该LV的PE数量，其过程不会丢失原始数据
 
+# 命令
+
+| 功能        | PV管理命令    | VG管理命令    | LV管理命令    |
+| --------- | --------- | --------- | --------- |
+| scan扫描    | pvscan    | vgscan    | Ivscan    |
+| create 创建 | pvcreate  | vgcreate  | Ivcreate  |
+| display显示 | pvdisplay | vgdisplay | Ivdisplay |
+| remove移除  | pvremove  | vgremove  | Ivremove  |
+| extend扩展  |           | vgextend  | lvextend  |
+| reduce减少  |           | vgreduce  | Ivreduce  |
+
 
